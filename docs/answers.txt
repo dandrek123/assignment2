@@ -1,0 +1,51 @@
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+  ../.DS_Store
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+1. How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information.
+A. git rev-list --all --count
+
+14
+
+2. When was the README.md file modified last? Write the git command you used to get this information.
+A. git log -1 -- README.md
+
+commit ad200eddf8036f743eae22a5b644011f74041722
+Author: D’Andre Knight <dandreknight@MacBook-Air.lan>
+Date:   Mon Oct 28 14:00:20 2024 -0500
+
+    Updated README.md name: DAndre Knight FSUID: dik20d
+
+3. Mention two reasons why branches are used in a Git repository.
+A. Isolation of features: Branches allow developers to work on new features or bug fixes independently, without affecting the main codebase.
+Collaboration: Multiple developers can work on different branches, making it easier to merge changes once they're reviewed and approved.
+
+4. What is the difference between git log and git status? 
+A. git log shows the commit history, providing details on each commit.
+git status displays the working directory status, showing changes that are staged, unstaged, or untracked.
+
+5. What command would you use to see the commits where “Vehicle.h” was one of the committed files? 
+A. git log --follow -- Vehicle.h
+
+6. What command would you use to see the commits whose commit message contains the word “file”?
+A. git log --grep="file"
+
+7. In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation?
+A. (I) What is inheritance?
+Inheritance is an OOP concept where a class (child) derives attributes and behaviors from another class (parent), enabling code reuse.
+(II) What is polymorphism?
+Polymorphism allows methods to operate differently based on the object that is calling them, making code more flexible.
+(III) What is encapsulation?
+Encapsulation restricts access to certain components of an object, typically through access modifiers, promoting modularity and data protection.
+
+8. What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow?
+A. In the Dictator and Lieutenants workflow, a central leader (dictator) controls final integration, while lieutenants manage and combine contributions. Multiple managers supervise modifications and maintain an integration branch in the Integration Manager process, which allows for more decentralization of authority.
+
+9. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? 
+A. The Dictator and Lieutenants process manages contributions in big teams by allocating responsibility to lieutenants. This eliminates bottlenecks since changes may be vetted and merged individually before being sent to the central repository. It is more efficient and scalable than the Centralized process, which included a single manager handling all merges, resulting in delays.
+
